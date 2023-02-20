@@ -15,38 +15,26 @@ public class Joueur : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Deplacement();
+        Deplacement();
     }
 
-    //void Deplacement()
-    //{
-    //    Vector3 direction = gameObject.transform.forward * Input.GetAxis("Vertical") + gameObject.transform.right * Input.GetAxis("Horizontal");
+    void Deplacement()
+    {
+        Vector3 direction = cc.transform.forward * Input.GetAxis("Vertical") + cc.transform.right * Input.GetAxis("Horizontal");
 
-    //    if (direction.magnitude > 0)
-    //    {
-    //        direction = new Vector3(direction.x, 0, direction.z);
-    //        //direction.y = 0;
+        if (direction.magnitude > 0)
+        {
+            direction = new Vector3(direction.x, direction.y, 0);
+            //direction.y = 0;
 
-    //        direction.Normalize();
-    //        //direction = direction.normalized;
+            direction.Normalize();
+            //direction = direction.normalized;
 
-    //        direction = direction * (Input.GetAxis("Sprint") * 0.5f + 1);
+            //direction = direction * (Input.GetAxis("Sprint") * 0.5f + 1);
 
 
-    //    }
-    //    //if (cc.isGrounded)
-    //    //{
-    //    //    if (Input.GetButtonDown("Jump"))
-    //    //    {
-    //    //        jump = Vector3.up * forceJump;
-    //    //    }
-    //    //    jump.y = Mathf.Max(-1, jump.y);
-    //    //}
-    //    //else
-    //    //{
-    //    //    jump -= Vector3.up * Time.deltaTime * gravity;
-    //    //}
+        }
 
-    //    cc.Move((direction * vitesse) * Time.deltaTime);
-    //}
+        cc.Move((direction * vitesse) * Time.deltaTime);
+    }
 }
