@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraBorder : MonoBehaviour
 {
-    Camera mainCamera;
-    float Hauteur;
-    float Largeur;
+    Camera Camera;
+    float hauteur;
+    float largeur;
     // Start is called before the first frame update
     void Start()
     {
-        mainCamera = GetComponent<Camera>();
+        Camera = Camera.main;
     }
 
     // Update is called once per frame
