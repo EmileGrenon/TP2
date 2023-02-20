@@ -20,7 +20,7 @@ public class Joueur : MonoBehaviour
 
     void Deplacement()
     {
-        Vector3 direction = cc.transform.forward * Input.GetAxis("Vertical") + cc.transform.right * Input.GetAxis("Horizontal");
+        Vector3 direction = cc.transform.up * Input.GetAxis("Vertical") + cc.transform.right * Input.GetAxis("Horizontal");
 
         if (direction.magnitude > 0)
         {
