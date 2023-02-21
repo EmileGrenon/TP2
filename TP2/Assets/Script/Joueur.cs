@@ -5,11 +5,11 @@ using UnityEngine;
 public class Joueur : MonoBehaviour
 {
     [SerializeField] float vitesse = 50;
-    CharacterController cc;
+    Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
-        cc = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -20,21 +20,13 @@ public class Joueur : MonoBehaviour
 
     void Deplacement()
     {
-        Vector3 direction = cc.transform.up * Input.GetAxis("Vertical") + cc.transform.right * Input.GetAxis("Horizontal");
+        Vector3 direction = rb.transform.up * Input.GetAxis("Vertical") + rb.transform.right * Input.GetAxis("Horizontal");
 
         if (direction.magnitude > 0)
         {
             direction = new Vector3(direction.x, direction.y, 0);
-            //direction.y = 0;
-
             direction.Normalize();
-            //direction = direction.normalized;
-
-            //direction = direction * (Input.GetAxis("Sprint") * 0.5f + 1);
-
-
         }
-
-        cc.Move((direction * vitesse) * Time.deltaTime);
+        rb.MovePosition(transform.position + direction * vitesse * Time.deltaTime);
     }
 }
