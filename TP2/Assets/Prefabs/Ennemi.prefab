@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 449742}
   - component: {fileID: 6758239252024637146}
-  - component: {fileID: 729240761182670372}
   - component: {fileID: 5786219816954897899}
   m_Layer: 0
   m_Name: Ennemi
@@ -27,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4689e-10, y: 0.0013209, z: 0}
-  m_LocalScale: {x: 0.99586, y: 0.99586, z: 0.99586}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 430572}
@@ -50,19 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dfd1716f7486544a92aa058bf3c4f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &729240761182670372
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114360}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2821902, y: 1.0608029, z: 0.48425144}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  vitesseEnnemi: 10
 --- !u!54 &5786219816954897899
 Rigidbody:
   m_ObjectHideFlags: 0
