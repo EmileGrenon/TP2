@@ -28,4 +28,10 @@ public class ennemi1 : MonoBehaviour
         }
         
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        print(collision.gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
+    }
 }
