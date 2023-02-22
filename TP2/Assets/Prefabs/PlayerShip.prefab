@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 454936}
   - component: {fileID: 3360982}
   - component: {fileID: 2365644}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EngineRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 413534}
   - component: {fileID: 9055859702530698343}
   - component: {fileID: 3831311502814616484}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlayerShip
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -117,6 +117,8 @@ Transform:
   - {fileID: 452778}
   - {fileID: 480424}
   - {fileID: 494956}
+  - {fileID: 6594137071809964822}
+  - {fileID: 8053646817217394696}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -133,6 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 100
+  vitesseTir: 3
+  balle: {fileID: 0}
 --- !u!54 &3831311502814616484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -160,7 +164,7 @@ GameObject:
   - component: {fileID: 494956}
   - component: {fileID: 3368352}
   - component: {fileID: 2355888}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cabin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +247,7 @@ GameObject:
   - component: {fileID: 452778}
   - component: {fileID: 3398364}
   - component: {fileID: 2306740}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thruster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +330,7 @@ GameObject:
   - component: {fileID: 480424}
   - component: {fileID: 3337506}
   - component: {fileID: 2308594}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,3 +402,65 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &687433675376919747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6594137071809964822}
+  m_Layer: 7
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6594137071809964822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687433675376919747}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.05761, y: 3.1280842, z: 5.2566733}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 413534}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1783217326323145359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8053646817217394696}
+  m_Layer: 7
+  m_Name: cannon
+  m_TagString: barrel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8053646817217394696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783217326323145359}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.029, y: 1.39, z: -0.158}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 413534}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
