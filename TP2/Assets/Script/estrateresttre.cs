@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class estrateresttre : MonoBehaviour
 {
-    [SerializeField] float vitesseEnnemi = 10;
-    bool direction = true;
-
+    [SerializeField] float amplitude = 3;
+    [SerializeField] float radStepPerSecond = (float)(3.14159 / 2);
+    [SerializeField] Space space = Space.World;
+    float placeIni;
     // Start is called before the first frame update
     void Start()
     {
-
+        placeIni = transform.position.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (direction)
-        {
-            transform.Translate(-1 * vitesseEnnemi * Time.deltaTime, -1 * Time.deltaTime * vitesseEnnemi, 0);
-        }
+
+        transform.Translate(placeIni + (amplitude * Mathf.Sin(radStepPerSecond * Time.time))
+            - transform.position.x, (float)-0.003, 0, space);
 
     }
 }
