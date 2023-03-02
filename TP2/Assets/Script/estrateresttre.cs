@@ -19,7 +19,7 @@ public class estrateresttre : MonoBehaviour
     {
 
         transform.Translate(placeIni + (amplitude * Mathf.Sin(radStepPerSecond * Time.time))
-            - transform.position.x, (float)-0.003, 0, space);
+            - transform.position.x, (float)-0.00003, 0, space);
 
     }
 }

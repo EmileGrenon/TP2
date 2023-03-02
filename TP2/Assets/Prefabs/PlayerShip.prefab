@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vitesse: 100
   vitesseTir: 3
-  balle: {fileID: 0}
+  balle: {fileID: 1313439648206048673, guid: cea2821ce665c1d4ba4e7f2ef420fe43, type: 3}
 --- !u!54 &3831311502814616484
 Rigidbody:
   m_ObjectHideFlags: 0

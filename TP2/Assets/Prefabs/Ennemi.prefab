@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 449742}
   - component: {fileID: 6758239252024637146}
+  - component: {fileID: -5599098187476980081}
   - component: {fileID: 5786219816954897899}
   m_Layer: 0
   m_Name: Ennemi
@@ -49,7 +50,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dfd1716f7486544a92aa058bf3c4f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesseEnnemi: 10
+  vitesseEnnemi: 5
+--- !u!114 &-5599098187476980081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4e133ded30cd345b75d89970ce60cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempsDeVieInitial: 5
 --- !u!54 &5786219816954897899
 Rigidbody:
   m_ObjectHideFlags: 0
