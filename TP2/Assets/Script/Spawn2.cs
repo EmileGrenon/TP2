@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class Spawn : MonoBehaviour
+public class Spawn2 : MonoBehaviour
 {
     [SerializeField] GameObject ennemi;
     int compteur;
@@ -33,16 +31,8 @@ public class Spawn : MonoBehaviour
             compteur = 0;
             if (obj != null)
             {
-                if(temps >= 10000)
-                {
-                    temps = 0;
-                    if(nb >= 101)
-                    {
-                        nb -= 75;
-                    }
-                    
-                }
-                obj.transform.position = new Vector3(nombreAleatoire,Max.transform.position.y,0);
+                
+                obj.transform.position = new Vector3(nombreAleatoire, Max.transform.position.y, 0);
                 obj.transform.rotation = Max.transform.rotation;
                 obj.SetActive(true);
                 obj = null;

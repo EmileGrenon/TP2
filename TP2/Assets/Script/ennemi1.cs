@@ -18,13 +18,7 @@ public class ennemi1 : MonoBehaviour
     {
         if (direction)
         {
-            transform.Translate(1 * vitesseEnnemi * Time.deltaTime, -1 * Time.deltaTime * vitesseEnnemi, 0);
-            direction= false;
-        }
-        else
-        {
-            transform.Translate(-1 * vitesseEnnemi * Time.deltaTime, -1 * Time.deltaTime * vitesseEnnemi, 0);
-            direction = true;
+            transform.Translate(0, -1 * Time.deltaTime * vitesseEnnemi, 0);
         }
         
     }

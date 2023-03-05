@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6758239252024637146}
   - component: {fileID: -5599098187476980081}
   - component: {fileID: 5786219816954897899}
-  m_Layer: 0
+  - component: {fileID: 5390460454230627961}
+  m_Layer: 8
   m_Name: Ennemi
-  m_TagString: Untagged
+  m_TagString: Ennemi1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,6 +81,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &5390460454230627961
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.370786, z: 1.1782331}
+  m_Center: {x: 0, y: 0.4644785, z: -0.08911677}
 --- !u!1 &127696
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +105,7 @@ GameObject:
   - component: {fileID: 430572}
   - component: {fileID: 3354744}
   - component: {fileID: 2350704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EngineRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +188,7 @@ GameObject:
   - component: {fileID: 488394}
   - component: {fileID: 3316634}
   - component: {fileID: 2315832}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cabin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +271,7 @@ GameObject:
   - component: {fileID: 472794}
   - component: {fileID: 3338048}
   - component: {fileID: 2363480}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +354,7 @@ GameObject:
   - component: {fileID: 459666}
   - component: {fileID: 3363908}
   - component: {fileID: 2339786}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -7,6 +7,8 @@ TagManager:
   - barrel
   - Max
   - Min
+  - Ennemi1
+  - Ennemi2
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - UI
   - Balles
   - Player
-  - 
-  - 
+  - Ennemi1
+  - Ennemi2
   - 
   - 
   - 

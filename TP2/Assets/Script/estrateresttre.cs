@@ -18,8 +18,17 @@ public class estrateresttre : MonoBehaviour
     void Update()
     {
 
+        //transform.Translate(0, placeIni + (amplitude * Mathf.Sin(radStepPerSecond * Time.time))
+        //    - transform.position.y, 0, space);
         transform.Translate(placeIni + (amplitude * Mathf.Sin(radStepPerSecond * Time.time))
-            - transform.position.x, (float)-0.00003, 0, space);
+            - transform.position.x, (float)-0.005, 0, space);
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        print(collision.gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
