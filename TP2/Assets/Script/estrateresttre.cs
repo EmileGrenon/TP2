@@ -39,7 +39,7 @@ public class estrateresttre : MonoBehaviour
             if (obj != null)
             {
                 obj.transform.position = barrel.transform.position;
-                obj.transform.rotation = barrel.transform.rotation;
+                obj.transform.rotation = Quaternion.LookRotation(Vector3.forward,player.transform.position - barrel.transform.position);
                 obj.SetActive(true);
                 obj = null;
             }
