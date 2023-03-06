@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed6cacf61cb92e489630e04b7926b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 5
+  vitesse: 3
 --- !u!1 &8536990014470774145
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed6cacf61cb92e489630e04b7926b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 5
+  vitesse: 3
 --- !u!212 &8536990014470774146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -205,7 +205,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5160789132871295791}
-  - component: {fileID: 5523780251488567915}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -230,16 +229,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5523780251488567915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9116973054829678903}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ed6cacf61cb92e489630e04b7926b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitesse: 5

@@ -189,7 +189,8 @@ MonoBehaviour:
   - {fileID: 1313439648206048673, guid: cea2821ce665c1d4ba4e7f2ef420fe43, type: 3}
   - {fileID: 114360, guid: ae5a6ef34fae9094280616896b9c0952, type: 3}
   - {fileID: 7571970127929798992, guid: fa03fd8ad682d494db09adaa10867c84, type: 3}
-  quantiteParObjets: 1e0000001e0000000f000000
+  - {fileID: 1313439648206048673, guid: 99bbc5722bd879f4d8b061c449ca5640, type: 3}
+  quantiteParObjets: 1e0000001e0000000f0000000a000000
 --- !u!4 &641646720
 Transform:
   m_ObjectHideFlags: 0
@@ -359,11 +360,19 @@ PrefabInstance:
     - target: {fileID: 8370213680714925515, guid: fa03fd8ad682d494db09adaa10867c84, type: 3}
       propertyPath: tir
       value: 
-      objectReference: {fileID: 1313439648206048673, guid: cea2821ce665c1d4ba4e7f2ef420fe43, type: 3}
+      objectReference: {fileID: 1313439648206048673, guid: 99bbc5722bd879f4d8b061c449ca5640, type: 3}
     - target: {fileID: 8370213680714925515, guid: fa03fd8ad682d494db09adaa10867c84, type: 3}
       propertyPath: amplitude
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8370213680714925515, guid: fa03fd8ad682d494db09adaa10867c84, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370213680714925515, guid: fa03fd8ad682d494db09adaa10867c84, type: 3}
+      propertyPath: balleEnnemi
+      value: 
+      objectReference: {fileID: 1313439648206048673, guid: 99bbc5722bd879f4d8b061c449ca5640, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa03fd8ad682d494db09adaa10867c84, type: 3}
 --- !u!1001 &1712127497
@@ -375,11 +384,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2681464268449760637, guid: 1cc9efb6861920b4fb8788637698961e, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4373762542468603598, guid: 1cc9efb6861920b4fb8788637698961e, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5160789132871295791, guid: 1cc9efb6861920b4fb8788637698961e, type: 3}
       propertyPath: m_RootOrder
@@ -437,7 +446,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5523780251488567915, guid: 1cc9efb6861920b4fb8788637698961e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1cc9efb6861920b4fb8788637698961e, type: 3}
 --- !u!1001 &1741234176
 PrefabInstance:
@@ -497,6 +507,10 @@ PrefabInstance:
     - target: {fileID: 449742, guid: ae5a6ef34fae9094280616896b9c0952, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758239252024637146, guid: ae5a6ef34fae9094280616896b9c0952, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6758239252024637146, guid: ae5a6ef34fae9094280616896b9c0952, type: 3}
       propertyPath: vitesseEnnemi

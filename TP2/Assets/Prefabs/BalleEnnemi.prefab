@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1756205332131871944}
   - component: {fileID: 2167524531484663605}
-  - component: {fileID: 3642035732674274960}
   - component: {fileID: -799664992561266068}
+  - component: {fileID: 4107153736081910027}
   - component: {fileID: 3454332541874095023}
   - component: {fileID: 2635894905121163491}
   - component: {fileID: 4053913405432168022}
-  m_Layer: 6
-  m_Name: Balle
+  m_Layer: 10
+  m_Name: BalleEnnemi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,19 +45,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313439648206048673}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &3642035732674274960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313439648206048673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 766893fd3b3f1434583d2afb1935ccec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitesse: 2000
 --- !u!114 &-799664992561266068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +58,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempsDeVieInitial: 3
+--- !u!114 &4107153736081910027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313439648206048673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766893fd3b3f1434583d2afb1935ccec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesse: 500
 --- !u!23 &3454332541874095023
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -91,7 +91,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2cb906f93df67424b92a047f057a4b5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

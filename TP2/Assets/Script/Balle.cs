@@ -15,8 +15,9 @@ public class Balle : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        // transform.Translate(transform.forward * vitesse * Time.deltaTime, Space.World);
+        //transform.Translate(transform.up * vitesse * Time.deltaTime, Space.World);
         rb.velocity = transform.up * Time.deltaTime * vitesse;
+        //print(rb.velocity);
     }
 
     private void OnCollisionEnter(Collision collision)
