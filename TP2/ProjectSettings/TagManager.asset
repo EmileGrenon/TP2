@@ -9,6 +9,7 @@ TagManager:
   - Min
   - Ennemi1
   - Ennemi2
+  - barrel2
   layers:
   - Default
   - TransparentFX

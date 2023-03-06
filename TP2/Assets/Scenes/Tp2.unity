@@ -231,24 +231,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ennemi: {fileID: 7571970127929798992, guid: fa03fd8ad682d494db09adaa10867c84, type: 3}
---- !u!1 &695656565 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9116973054829678903, guid: 1cc9efb6861920b4fb8788637698961e, type: 3}
-  m_PrefabInstance: {fileID: 1712127497}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &695656568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695656565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ed6cacf61cb92e489630e04b7926b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitesse: 5
 --- !u!1001 &735939970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,6 +357,10 @@ PrefabInstance:
       value: Estraterrestre
       objectReference: {fileID: 0}
     - target: {fileID: 8370213680714925515, guid: fa03fd8ad682d494db09adaa10867c84, type: 3}
+      propertyPath: tir
+      value: 
+      objectReference: {fileID: 1313439648206048673, guid: cea2821ce665c1d4ba4e7f2ef420fe43, type: 3}
+    - target: {fileID: 8370213680714925515, guid: fa03fd8ad682d494db09adaa10867c84, type: 3}
       propertyPath: amplitude
       value: 10
       objectReference: {fileID: 0}
@@ -437,6 +423,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5160789132871295791, guid: 1cc9efb6861920b4fb8788637698961e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523780251488567915, guid: 1cc9efb6861920b4fb8788637698961e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8536990014470774146, guid: 1cc9efb6861920b4fb8788637698961e, type: 3}
@@ -528,7 +518,7 @@ GameObject:
   - component: {fileID: 1937750666}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
