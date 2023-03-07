@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class estrateresttre : MonoBehaviour
+public class Ennemi2Mouvement : MonoBehaviour
 {
     [SerializeField] float amplitude = 3;
     [SerializeField] float radStepPerSecond = (float)(3.14159 / 2);
     [SerializeField] GameObject balleEnnemi;
-    [SerializeField] Space space = Space.World;
 
-    float vitesseTir = 0.5f;
-    float delaiTir = 0.5f;
+    [SerializeField] float vitesseTir = 0.5f;
+    float delaiTir = 0;
+
     GameObject barrel;
     GameObject player;
     float placeIni;
@@ -28,12 +28,10 @@ public class estrateresttre : MonoBehaviour
     void Update()
     {
         transform.Translate(placeIni + (amplitude * Mathf.Sin(Time.time - tempsIni))
-            - transform.position.x, (float)-0.005, 0, space);
+            - transform.position.x, (float)-0.005, 0);
 
         if (delaiTir <= 0)
         {
-            //GameObject.Instantiate(balle,barrel.transform.position, barrel.transform.rotation);
-
             GameObject obj = ObjectPool.objectPoolInstance.GetPooledObject(balleEnnemi);
 
             if (obj != null)
@@ -44,18 +42,14 @@ public class estrateresttre : MonoBehaviour
                 obj = null;
             }
 
-            delaiTir = 0.5f / vitesseTir;
+            delaiTir = 1 / vitesseTir;
         }
         else
-        {
             delaiTir -= Time.deltaTime;
-        }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        print(collision.gameObject);
-        //Destroy(gameObject);
         gameObject.SetActive(false);
     }
 }

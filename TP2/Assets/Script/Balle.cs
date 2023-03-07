@@ -5,25 +5,20 @@ using UnityEngine;
 public class Balle : MonoBehaviour
 {
     [SerializeField] float vitesse = 20;
-    Rigidbody rb;
+    Rigidbody2D rb;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        //transform.Translate(transform.up * vitesse * Time.deltaTime, Space.World);
         rb.velocity = transform.up * Time.deltaTime * vitesse;
-        //print(rb.velocity);
     }
-
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        print(collision.gameObject);
-        //Destroy(gameObject);
         gameObject.SetActive(false);
     }
 }

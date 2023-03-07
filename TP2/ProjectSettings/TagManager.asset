@@ -7,8 +7,6 @@ TagManager:
   - barrel
   - Max
   - Min
-  - Ennemi1
-  - Ennemi2
   - barrel2
   layers:
   - Default
@@ -17,11 +15,11 @@ TagManager:
   - "D\xE9cor"
   - Water
   - UI
-  - Balles
+  - Ennemi
   - Player
-  - Ennemi1
-  - Ennemi2
-  - BallesEnnemi
+  - Balle
+  - BalleEnnemi
+  - 
   - 
   - 
   - 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ennemi1 : MonoBehaviour
+public class Ennemi1Mouvement : MonoBehaviour
 {
     [SerializeField] float vitesseEnnemi = 10;
     bool direction = true;
@@ -22,10 +22,13 @@ public class ennemi1 : MonoBehaviour
         }
         
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        gameObject.SetActive(false);
+        print("allo");
+    }
     private void OnCollisionEnter(Collision collision)
     {
-        print(collision.gameObject);
-        //Destroy(gameObject);
         gameObject.SetActive(false);
     }
 }

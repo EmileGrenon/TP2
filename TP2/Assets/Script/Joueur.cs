@@ -6,7 +6,7 @@ using UnityEngine.Pool;
 public class Joueur : MonoBehaviour
 {
     [SerializeField] float vitesse = 50;
-    Rigidbody rb;
+    Rigidbody2D rb;
     CharacterController cc;
     [SerializeField] float vitesseTir = 3;
     [SerializeField] GameObject balle;
@@ -16,7 +16,7 @@ public class Joueur : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         cc = GetComponent<CharacterController>();
         barrel = GameObject.FindGameObjectWithTag("barrel");
     }

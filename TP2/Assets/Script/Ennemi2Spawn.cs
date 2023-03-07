@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn2 : MonoBehaviour
+public class Ennemi2Spawn : MonoBehaviour
 {
     [SerializeField] GameObject ennemi;
     int compteur;

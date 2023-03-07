@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouvementBackground : MonoBehaviour
+public class BackgroundMouvement : MonoBehaviour
 {
     [SerializeField] float vitesse = 5;
     Camera cam;

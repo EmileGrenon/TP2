@@ -4,7 +4,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Spawn : MonoBehaviour
+public class Ennemi1Spawn : MonoBehaviour
 {
     [SerializeField] GameObject ennemi;
     int compteur;
