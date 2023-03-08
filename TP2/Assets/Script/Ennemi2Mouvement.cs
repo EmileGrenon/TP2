@@ -5,7 +5,6 @@ using UnityEngine;
 public class Ennemi2Mouvement : MonoBehaviour
 {
     [SerializeField] float amplitude = 3;
-    [SerializeField] float radStepPerSecond = (float)(3.14159 / 2);
     [SerializeField] GameObject balleEnnemi;
 
     bool tir = false;
