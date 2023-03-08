@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -5599098187476980081}
   - component: {fileID: -5402972319501974478}
   - component: {fileID: 8070032433896313322}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ennemi1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 430572}
   - component: {fileID: 3354744}
   - component: {fileID: 2350704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EngineRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 488394}
   - component: {fileID: 3316634}
   - component: {fileID: 2315832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cabin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 472794}
   - component: {fileID: 3338048}
   - component: {fileID: 2363480}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 459666}
   - component: {fileID: 3363908}
   - component: {fileID: 2339786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
