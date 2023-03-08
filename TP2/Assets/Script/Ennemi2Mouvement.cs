@@ -8,18 +8,19 @@ public class Ennemi2Mouvement : MonoBehaviour
     [SerializeField] float radStepPerSecond = (float)(3.14159 / 2);
     [SerializeField] GameObject balleEnnemi;
 
-    [SerializeField] float vitesseTir = 0.5f;
-    float delaiTir = 0;
+    [SerializeField] float vitesseTir = 0.1f;
+    bool uneBalle = false;
 
     GameObject barrel;
     GameObject player;
+    const float tempsTir = 3;
     float placeIni;
+    float deltaTir = 0;
     float tempsIni;
     // Start is called before the first frame update
     void Start()
     {
         placeIni = transform.position.x;
-        barrel = GameObject.FindGameObjectWithTag("barrel2");
         tempsIni = Time.time; 
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -27,25 +28,24 @@ public class Ennemi2Mouvement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        deltaTir += Time.deltaTime;
+
         transform.Translate(placeIni + (amplitude * Mathf.Sin(Time.time - tempsIni))
             - transform.position.x, (float)-0.005, 0);
 
-        if (delaiTir <= 0)
+        if (deltaTir >= tempsTir)
         {
             GameObject obj = ObjectPool.objectPoolInstance.GetPooledObject(balleEnnemi);
 
             if (obj != null)
             {
-                obj.transform.position = barrel.transform.position;
-                obj.transform.rotation = Quaternion.LookRotation(Vector3.forward,player.transform.position - barrel.transform.position);
+                obj.transform.position = transform.position;
+                obj.transform.rotation = Quaternion.LookRotation(Vector3.forward, player.transform.position - transform.position);
                 obj.SetActive(true);
                 obj = null;
+                deltaTir= 0;
             }
-
-            delaiTir = 1 / vitesseTir;
         }
-        else
-            delaiTir -= Time.deltaTime;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

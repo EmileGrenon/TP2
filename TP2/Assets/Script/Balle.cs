@@ -5,6 +5,7 @@ using UnityEngine;
 public class Balle : MonoBehaviour
 {
     [SerializeField] float vitesse = 20;
+    [SerializeField] GameObject impactPrefab;
     Rigidbody2D rb;
 
     private void Start()
@@ -19,6 +20,13 @@ public class Balle : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
+        GameObject impactFx = ObjectPool.objectPoolInstance.GetPooledObject(impactPrefab);
+        if (impactFx != null)
+        {
+            impactFx.SetActive(true);
+            impactFx.transform.position = collision.contacts[0].point;
+        }
+
         gameObject.SetActive(false);
     }
 }
