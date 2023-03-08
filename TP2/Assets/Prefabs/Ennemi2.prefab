@@ -144,7 +144,6 @@ MonoBehaviour:
   amplitude: 10
   radStepPerSecond: 1.570795
   balleEnnemi: {fileID: 1313439648206048673, guid: 99bbc5722bd879f4d8b061c449ca5640, type: 3}
-  vitesseTir: 0.2
 --- !u!114 &5226880257309341196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4e133ded30cd345b75d89970ce60cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempsDeVieInitial: 10
+  tempsDeVieInitial: 8
 --- !u!23 &5799901769542822491
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -8,12 +8,9 @@ public class Ennemi2Mouvement : MonoBehaviour
     [SerializeField] float radStepPerSecond = (float)(3.14159 / 2);
     [SerializeField] GameObject balleEnnemi;
 
-    [SerializeField] float vitesseTir = 0.1f;
-    bool uneBalle = false;
-
-    GameObject barrel;
+    bool tir = false;
     GameObject player;
-    const float tempsTir = 3;
+    const float tempsTir = 1;
     float placeIni;
     float deltaTir = 0;
     float tempsIni;
@@ -33,7 +30,7 @@ public class Ennemi2Mouvement : MonoBehaviour
         transform.Translate(placeIni + (amplitude * Mathf.Sin(Time.time - tempsIni))
             - transform.position.x, (float)-0.005, 0);
 
-        if (deltaTir >= tempsTir)
+        if (deltaTir >= tempsTir && !tir)
         {
             GameObject obj = ObjectPool.objectPoolInstance.GetPooledObject(balleEnnemi);
 
@@ -43,9 +40,14 @@ public class Ennemi2Mouvement : MonoBehaviour
                 obj.transform.rotation = Quaternion.LookRotation(Vector3.forward, player.transform.position - transform.position);
                 obj.SetActive(true);
                 obj = null;
-                deltaTir= 0;
+                tir= true;
             }
         }
+    }
+    private void OnEnable()
+    {
+        tir = false;
+        deltaTir= 0;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

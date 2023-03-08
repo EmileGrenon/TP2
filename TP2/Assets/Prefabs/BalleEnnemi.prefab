@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4e133ded30cd345b75d89970ce60cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempsDeVieInitial: 3
+  tempsDeVieInitial: 5
 --- !u!114 &4107153736081910027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +70,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766893fd3b3f1434583d2afb1935ccec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 500
+  vitesse: 250
+  impactPrefab: {fileID: 0}
 --- !u!23 &3454332541874095023
 MeshRenderer:
   m_ObjectHideFlags: 0
