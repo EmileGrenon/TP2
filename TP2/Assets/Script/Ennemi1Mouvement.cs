@@ -25,7 +25,6 @@ public class Ennemi1Mouvement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         gameObject.SetActive(false);
-        print("allo");
     }
     private void OnCollisionEnter(Collision collision)
     {

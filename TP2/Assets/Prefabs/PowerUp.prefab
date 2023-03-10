@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 5580956579548169905}
   - component: {fileID: 8975210573517491997}
   - component: {fileID: 1415886468363865462}
-  - component: {fileID: 5426804882144932826}
+  - component: {fileID: 2626545077514424737}
+  - component: {fileID: 1222802333882462585}
+  - component: {fileID: 7889530671208469589}
   m_Layer: 10
   m_Name: PowerUp
   m_TagString: Untagged
@@ -85,20 +87,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5426804882144932826
-CapsuleCollider:
+--- !u!114 &2626545077514424737
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8422517345864222023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4e133ded30cd345b75d89970ce60cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempsDeVieInitial: 8
+--- !u!114 &1222802333882462585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422517345864222023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dfd12480ea59b14cb021fec32299c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesse: 2
+--- !u!70 &7889530671208469589
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422517345864222023}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
 --- !u!1 &8700306893280793840
 GameObject:
   m_ObjectHideFlags: 0

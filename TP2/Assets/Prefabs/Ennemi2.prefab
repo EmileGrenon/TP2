@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: -7191292815037626361}
   m_Layer: 6
   m_Name: Ennemi2
-  m_TagString: barrel2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,7 +142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amplitude: 10
-  radStepPerSecond: 1.570795
   balleEnnemi: {fileID: 1313439648206048673, guid: 99bbc5722bd879f4d8b061c449ca5640, type: 3}
 --- !u!114 &5226880257309341196
 MonoBehaviour:

@@ -136,9 +136,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95db92e746efff4cbd7abed37931499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 100
-  vitesseTir: 3
+  vitesse: 150
+  vitesseTir: 6
   balle: {fileID: 1313439648206048673, guid: cea2821ce665c1d4ba4e7f2ef420fe43, type: 3}
+  powerUp: {fileID: 8422517345864222023, guid: a8a422c4a3a310d499254051ebd142a4, type: 3}
 --- !u!58 &7024399556015403572
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -436,7 +437,7 @@ GameObject:
   - component: {fileID: 9081997948901311455}
   m_Layer: 0
   m_Name: canon2
-  m_TagString: Untagged
+  m_TagString: barrel2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -498,7 +499,7 @@ GameObject:
   - component: {fileID: 3069202107887121107}
   m_Layer: 0
   m_Name: canon3
-  m_TagString: Untagged
+  m_TagString: barrel3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -8,6 +8,8 @@ TagManager:
   - Max
   - Min
   - barrel2
+  - barrel1
+  - barrel3
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Player
   - Balle
   - BalleEnnemi
-  - 
+  - PowerUp
   - 
   - 
   - 

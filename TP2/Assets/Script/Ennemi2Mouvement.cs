@@ -29,7 +29,7 @@ public class Ennemi2Mouvement : MonoBehaviour
         transform.Translate(placeIni + (amplitude * Mathf.Sin(Time.time - tempsIni))
             - transform.position.x, (float)-0.005, 0);
 
-        if (deltaTir >= tempsTir && !tir)
+        if (deltaTir >= tempsTir && !tir && player != null)
         {
             GameObject obj = ObjectPool.objectPoolInstance.GetPooledObject(balleEnnemi);
 
