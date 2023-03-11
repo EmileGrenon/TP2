@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 449742}
   - component: {fileID: 6758239252024637146}
   - component: {fileID: -5599098187476980081}
+  - component: {fileID: 6484759511182989762}
   - component: {fileID: -5402972319501974478}
   - component: {fileID: 8070032433896313322}
   m_Layer: 6
@@ -65,6 +66,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempsDeVieInitial: 5
+--- !u!114 &6484759511182989762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7301944cbc130234a84af4d64805f075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChanceApparition: 0.05
+  powerUp: {fileID: 8422517345864222023, guid: a8a422c4a3a310d499254051ebd142a4, type: 3}
 --- !u!50 &-5402972319501974478
 Rigidbody2D:
   serializedVersion: 4

@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 250
-  impactPrefab: {fileID: 0}
+  impactPrefab: {fileID: 262915560954517053, guid: bfbc41f5f9d82c9459b509ebcfd3d625, type: 3}
 --- !u!23 &3454332541874095023
 MeshRenderer:
   m_ObjectHideFlags: 0

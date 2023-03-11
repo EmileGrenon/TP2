@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
     private List<GameObject> pool = new List<GameObject>();
-
     [SerializeField] GameObject[] objectsToPool;
     [SerializeField] int[] quantiteParObjets;
 
     public static ObjectPool objectPoolInstance;
-
     private void Awake()
     {
         if (objectPoolInstance == null)

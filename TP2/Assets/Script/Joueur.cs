@@ -34,7 +34,7 @@ public class Joueur : MonoBehaviour
 
         if (Input.GetAxis("Fire") > 0 && delaiTir <= 0)
         {
-            GameObject obj1 = ObjectPool.objectPoolInstance.GetPooledObject(balle);
+            GameObject obj1 = ObjectPoolBalle.objectPoolInstance.GetPooledObject();
 
             switch (vie)
             {
@@ -48,14 +48,17 @@ public class Joueur : MonoBehaviour
                     }
                     break;
                 case 2:
-                    GameObject obj2 = ObjectPool.objectPoolInstance.GetPooledObject(balle);
-                    if (obj1 != null && obj2 != null)
+
+                    if (obj1 != null)
                     {
                         obj1.transform.position = barrel2.transform.position;
                         obj1.transform.rotation = transform.rotation;
                         obj1.SetActive(true);
                         obj1 = null;
-
+                    }
+                    GameObject obj2 = ObjectPoolBalle.objectPoolInstance.GetPooledObject();
+                    if (obj2 != null)
+                    {
                         obj2.transform.position = barrel3.transform.position;
                         obj2.transform.rotation = transform.rotation;
                         obj2.SetActive(true);
@@ -63,20 +66,26 @@ public class Joueur : MonoBehaviour
                     }
                     break;
                 default:
-                    GameObject obj3 = ObjectPool.objectPoolInstance.GetPooledObject(balle);
-                    GameObject obj4 = ObjectPool.objectPoolInstance.GetPooledObject(balle);
-                    if (obj1 != null && obj3 != null && obj4 != null)
+
+                    
+                    if (obj1 != null)
                     {
                         obj1.transform.position = barrel1.transform.position;
                         obj1.transform.rotation = transform.rotation;
                         obj1.SetActive(true);
                         obj1 = null;
-
+                    }
+                    GameObject obj3 = ObjectPoolBalle.objectPoolInstance.GetPooledObject();
+                    if (obj3 != null)
+                    {
                         obj3.transform.position = barrel2.transform.position;
                         obj3.transform.rotation = transform.rotation;
                         obj3.SetActive(true);
                         obj3 = null;
-
+                    }
+                    GameObject obj4 = ObjectPoolBalle.objectPoolInstance.GetPooledObject();
+                    if (obj4 != null)
+                    {
                         obj4.transform.position = barrel3.transform.position;
                         obj4.transform.rotation = transform.rotation;
                         obj4.SetActive(true);
