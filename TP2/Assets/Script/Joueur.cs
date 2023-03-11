@@ -116,7 +116,6 @@ public class Joueur : MonoBehaviour
     {
         if (collision.gameObject.name == powerUp.name)
         {
-            print("a");
             if (vie >= 3)
                 vie = 3;
             else

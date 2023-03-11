@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraBorder : MonoBehaviour
 {
-    Camera camera;
+    new Camera camera;
     float hauteur;
     float largeur;
     GameObject player;
