@@ -15,15 +15,16 @@ public class BackgroundMouvement : MonoBehaviour
         cam = Camera.main;
         sr = GetComponent<SpriteRenderer>();
         hauteurMesh = sr.bounds.size.y / 2;
-        hauteurCam = cam.orthographicSize * cam.aspect / 2;
+        hauteurCam = cam.orthographicSize / 2;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y + hauteurMesh < -hauteurCam + cam.transform.position.y)
+        print(sr.isVisible);// modifier
+        if (transform.position.y < cam.transform.position.y && !sr.isVisible)
         {
-            transform.position = transform.position + new Vector3(0, hauteurMesh * 4 -1, 0);
+            transform.position = transform.position + new Vector3(0, hauteurMesh * 4 - 1, 0);
         }
         transform.Translate(transform.up * -vitesse * Time.deltaTime);
     }
