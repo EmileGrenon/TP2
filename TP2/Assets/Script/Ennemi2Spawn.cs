@@ -7,13 +7,17 @@ public class Ennemi2Spawn : MonoBehaviour
     [SerializeField] GameObject ennemi;
     int compteur;
     int nb = 500;
-    GameObject Max;
-    GameObject Min;
+    float maxLargeur;
+    float minLargeur;
+    float hauteur;
 
     void Start()
     {
-        Max = GameObject.FindGameObjectWithTag("Max");
-        Min = GameObject.FindGameObjectWithTag("Min");
+        float camLargeur = (Camera.main.orthographicSize * Camera.main.aspect);
+        print(camLargeur);
+        maxLargeur = camLargeur - 3;
+        minLargeur = -camLargeur + 3;
+        hauteur = Camera.main.transform.position.y + Camera.main.orthographicSize + 2;
     }
 
     void Update()
@@ -25,10 +29,9 @@ public class Ennemi2Spawn : MonoBehaviour
             compteur = 0;
             if (obj != null)
             {
-                
-                obj.transform.position = new Vector3(Random.Range((int)Min.transform.position.x, (int)Max.transform.position.x),
-                    Max.transform.position.y, 0);
-                obj.transform.rotation = Max.transform.rotation;
+                obj.transform.position = new Vector3(Random.Range((int)minLargeur, (int)maxLargeur),
+                    hauteur, 0);
+                obj.transform.rotation = Quaternion.Euler(-Vector3.up);
                 obj.SetActive(true);
                 obj = null;
             }
