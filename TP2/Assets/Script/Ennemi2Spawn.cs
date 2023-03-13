@@ -6,7 +6,7 @@ public class Ennemi2Spawn : MonoBehaviour
 {
     [SerializeField] GameObject ennemi;
     int compteur;
-    int nb = 300;
+    int nb = 150;
     float maxLargeur;
     float minLargeur;
     float hauteur;
