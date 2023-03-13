@@ -7,15 +7,17 @@ using UnityEngine.UIElements;
 public class Ennemi1Spawn : MonoBehaviour
 {
     [SerializeField] GameObject ennemi;
-    int compteur;
-    float temps;
-    int nb = 500;
+    int compteur = 0;
+    int nb = 50;
+    int scaling = 20;
+    int currentScaling;
     float maxLargeur;
     float minLargeur;
     float hauteur;
     // Start is called before the first frame update
     void Start()
     {
+        currentScaling = scaling;
         float camLargeur = (Camera.main.orthographicSize * Camera.main.aspect);
         print(camLargeur);
         maxLargeur = camLargeur - 1;
@@ -24,22 +26,21 @@ public class Ennemi1Spawn : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         compteur++;
-        temps++;
         if (compteur == nb)
         {
             GameObject obj = ObjectPool.objectPoolInstance.GetPooledObject(ennemi);
             compteur = 0;
             if (obj != null)
             {
-                if(temps >= 10000)
+                if (Time.time >= currentScaling)
                 {
-                    temps = 0;
-                    if(nb >= 101)
+                    currentScaling += scaling;
+                    if (nb > 10)
                     {
-                        nb -= 75;
+                        nb -= 10;
                     }
                 }
                 obj.transform.position = new Vector3(Random.Range((int)minLargeur, (int)maxLargeur),hauteur,0);
@@ -48,5 +49,6 @@ public class Ennemi1Spawn : MonoBehaviour
                 obj = null;
             }
         }
+        
     }
 }

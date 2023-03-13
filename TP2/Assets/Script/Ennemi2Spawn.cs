@@ -6,7 +6,7 @@ public class Ennemi2Spawn : MonoBehaviour
 {
     [SerializeField] GameObject ennemi;
     int compteur;
-    int nb = 500;
+    int nb = 300;
     float maxLargeur;
     float minLargeur;
     float hauteur;
@@ -14,13 +14,12 @@ public class Ennemi2Spawn : MonoBehaviour
     void Start()
     {
         float camLargeur = (Camera.main.orthographicSize * Camera.main.aspect);
-        print(camLargeur);
-        maxLargeur = camLargeur - 3;
-        minLargeur = -camLargeur + 3;
+        maxLargeur = camLargeur - 4;
+        minLargeur = -camLargeur + 4;
         hauteur = Camera.main.transform.position.y + Camera.main.orthographicSize + 2;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         compteur++;
         if (compteur == nb)
